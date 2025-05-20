@@ -23,10 +23,10 @@ export default function GetAmount() {
   return (
     <div
       className="min-h-screen bg-green-50 p-4 flex flex-col items-center"
-      style={{ backgroundImage: "url('/background.png')", backgroundSize: "cover" }}
+      style={{ backgroundImage: "url('/imgs/background.png')", backgroundSize: "cover" }}
     >
       <h1 className="text-2xl font-bold text-green-700 mb-4 flex items-center gap-2">
-        <img src="/icon.png" alt="icon" className="w-8 h-8" />
+        <img src="/imgs/icon.png" alt="icon" className="w-8 h-8" />
         柳絮班級排行榜
       </h1>
 
@@ -36,7 +36,7 @@ export default function GetAmount() {
           {/* 第二名 */}
           {sortedAmount[1] && (
             <div className="flex flex-col items-center">
-              <img src="/second.png" alt="2nd" className="w-20 mb-2" />
+              <img src="/imgs/second.png" alt="2nd" className="w-20 mb-2" />
               <p className="text-sm font-semibold text-gray-700">
                 {sortedAmount[1].grade}年{String(sortedAmount[1].class).padStart(2, "0")}班
               </p>
@@ -47,7 +47,7 @@ export default function GetAmount() {
           {/* 第一名 */}
           {sortedAmount[0] && (
             <div className="flex flex-col items-center">
-              <img src="/first.png" alt="1st" className="w-24 mb-1" />
+              <img src="/imgs/first.png" alt="1st" className="w-24 mb-1" />
               <p className="text-sm font-semibold text-yellow-700">
                 {sortedAmount[0].grade}年{String(sortedAmount[0].class).padStart(2, "0")}班
               </p>
@@ -58,7 +58,7 @@ export default function GetAmount() {
           {/* 第三名 */}
           {sortedAmount[2] && (
             <div className="flex flex-col items-center">
-              <img src="/third.png" alt="3rd" className="w-20 mb-2" />
+              <img src="/imgs/third.png" alt="3rd" className="w-20 mb-2" />
               <p className="text-sm font-semibold text-orange-700">
                 {sortedAmount[2].grade}年{String(sortedAmount[2].class).padStart(2, "0")}班
               </p>
