@@ -25,7 +25,7 @@ export default function GetAmount() {
       className="min-h-screen bg-green-50 p-4 flex flex-col items-center"
       style={{ backgroundImage: "url('/imgs/background.png')", backgroundSize: "cover" }}
     >
-      <h1 className="text-2xl font-bold text-green-700 mb-4 flex items-center gap-2">
+      <h1 className="text-2xl font-bold text-[#004773] mb-4 flex items-center gap-2">
         <img src="/imgs/icon.png" alt="icon" className="w-8 h-8" />
         柳絮班級排行榜
       </h1>
@@ -54,11 +54,11 @@ export default function GetAmount() {
       <div className="flex flex-col items-center relative">
         <img src="/imgs/first.png" alt="1st" className="w-24 mb-1" />
 
-        <div className="absolute top-26 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm font-semibold text-yellow-700 text-center whitespace-nowrap">
+        <div className="absolute top-26 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm font-semibold text-[#475B63] text-center whitespace-nowrap">
           {sortedAmount[0].grade}年{String(sortedAmount[0].class).padStart(2, "0")}班
         </div>
 
-        <p className="mt-1 text-yellow-600 font-semibold">{sortedAmount[0].amount} 袋</p>
+        <p className="mt-1 text-[#475B63] font-semibold">{sortedAmount[0].amount} 袋</p>
       </div>
     )}
 
@@ -67,11 +67,11 @@ export default function GetAmount() {
       <div className="flex flex-col items-center relative">
         <img src="/imgs/third.png" alt="3rd" className="w-20 mb-2" />
 
-        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm font-semibold text-orange-700 text-center whitespace-nowrap">
+        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm font-semibold text-[#809DB1] text-center whitespace-nowrap">
           {sortedAmount[2].grade}年{String(sortedAmount[2].class).padStart(2, "0")}班
         </div>
 
-        <p className="mt-1 text-orange-700 font-medium">{sortedAmount[2].amount} 袋</p>
+        <p className="mt-1 text-[#809DB1] font-medium">{sortedAmount[2].amount} 袋</p>
       </div>
     )}
   </div>
@@ -89,7 +89,7 @@ export default function GetAmount() {
             <span>
               {item.grade}年{String(item.class).padStart(2, "0")}班
             </span>
-            <span className="text-green-600 font-semibold">{item.amount} 袋</span>
+            <span className="text-[#004773] font-semibold">{item.amount} 袋</span>
           </div>
         ))}
       </div>
