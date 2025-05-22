@@ -31,24 +31,25 @@ export default function GetAmount() {
       </h1>
 
       {/* sticky 頒獎台 */}
-      <div className="sticky top-0 z-10 bg-green-50/80 backdrop-blur pb-4 rounded-b">
+      <div className="sticky top-0 z-10 backdrop-blur pb-4 rounded-b">
         <div className="w-full max-w-md flex justify-around items-end">
           {/* 第二名 */}
           {sortedAmount[1] && (
             <div className="flex flex-col items-center">
               <img src="/imgs/second.png" alt="2nd" className="w-20 mb-2" />
-              <p className="text-sm font-semibold text-gray-700">
+              <p className="text-sm font-semibold text-gray-700 ">
                 {sortedAmount[1].grade}年{String(sortedAmount[1].class).padStart(2, "0")}班
               </p>
               <p className="mt-1 text-gray-600 font-medium">{sortedAmount[1].amount} 袋</p>
             </div>
           )}
+          
 
           {/* 第一名 */}
           {sortedAmount[0] && (
             <div className="flex flex-col items-center">
               <img src="/imgs/first.png" alt="1st" className="w-24 mb-1" />
-              <p className="text-sm font-semibold text-yellow-700">
+              <p className="text-sm font-semibold text-yellow-700 ">
                 {sortedAmount[0].grade}年{String(sortedAmount[0].class).padStart(2, "0")}班
               </p>
               <p className="mt-1 text-yellow-600 font-semibold">{sortedAmount[0].amount} 袋</p>
